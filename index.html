@@ -125,7 +125,7 @@
 
 <!-- NAV START -->
 
-<nav class="fixed w-full bg-0a0f2e z-50 shadow-lg backdrop-blur-md border-b border-gray-800">
+<nav class="fixed w-full bg-0a0f2e z-50 shadow-lg backdrop-blur-sm border-b border-gray-800">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
     <a href="#hero" class="text-xl font-bold flex items-center">
       <img src="https://lh3.googleusercontent.com/d/1aawM2QW_CLa1ONqjaFKFSDtGSp_U7CTn" alt="Ardellia" class="h-8" loading="lazy">
@@ -149,14 +149,34 @@
 <!-- NAV END -->
 
 
+  
+  
+  
+  
+  
+  
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu"
+     class="md:hidden fixed top-16 right-0 left-0 bg-0a0f2e/80 backdrop-blur-sm border-t border-gray-800 hidden z-40">
+  <div class="flex flex-col px-6 py-4 space-y-4 text-right">
+    <a href="#hero" class="hover:text-03A6A6 transition">About</a>
+    <a href="#projects" class="hover:text-03A6A6 transition">Portfolio</a>
+    <a href="#linkedin" class="hover:text-03A6A6 transition">LinkedIn</a>
+    <a href="#instagram" class="hover:text-03A6A6 transition">Instagram</a>
+    <a href="#values" class="hover:text-03A6A6 transition">Approach</a>
+    <a href="#contact" class="hover:text-03A6A6 transition">Contact</a>
+  </div>
+</div>
+<!-- MOBILE MENU -->
 
 
 
 
 
-
-
-
+  
+  
+  
 
 <!-- ### HERO START ### -->
 <section id="hero" class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
@@ -261,7 +281,7 @@
 
 <section id="projects" class="py-16 px-6 max-w-6xl mx-auto">
   <div class="space-y-16">
-    <h2 class="text-4xl md:text-5xl text-center tracking-wide">What we work on</h2>
+    <h2 class="text-4xl md:text-5xl text-center tracking-wide">Projects</h2>
 
 
 
@@ -840,6 +860,27 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 </script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.getElementById('mobile-toggle');
+  const menu   = document.getElementById('mobile-menu');
+
+  if (toggle && menu) {
+    toggle.addEventListener('click', function () {
+      menu.classList.toggle('hidden');
+    });
+
+    // close menu when clicking a link
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => menu.classList.add('hidden'));
+    });
+  }
+});
+</script>
+
+
 
 
 </body>
