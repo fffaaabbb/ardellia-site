@@ -425,257 +425,165 @@
 
 
 
-<!-- ### PROJECTS START ### -->
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+<!-- PROJECTS START -->
 <section id="projects" class="py-16 px-6 max-w-6xl mx-auto">
-    <div class="space-y-16">
+  <div class="space-y-16">
+    <h2 class="text-4xl md:text-5xl text-center tracking-wide">What we work on</h2>
 
-  <h2 class="text-4xl md:text-5xl text-center tracking-wide">What we work on</h2>
+    <!-- 1. Corporate Communication -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+      <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Corporate Communication</h2>
+      <div class="w-full md:w-1/2 relative">
+        <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="corporate-video-wrapper">
+          <!-- Vimeo iframe -->
+          <iframe
+            id="corporate-video-iframe"
+            class="absolute inset-0 w-full h-full"
+            src="https://player.vimeo.com/video/1117037290?h=3ecaa2c3ca&autoplay=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+          </iframe>
 
-
-        <!-- 1. Corporate Communication -->
-        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-            <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Corporate Communication</h2>
-            <div class="w-full md:w-1/2 relative">
-                <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="corporate-video-wrapper">
-                    <!-- Vimeo iframe -->
-                    <iframe
-                        id="corporate-video-iframe"
-                        class="absolute inset-0 w-full h-full"
-                        src="https://player.vimeo.com/video/1117037290?h=3ecaa2c3ca&autoplay=0"
-                        frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowfullscreen
-                    ></iframe>
-
-                    <!-- Thumbnail overlay -->
-                    <div
-                        id="corporate-video-thumb"
-                        class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg"
-                        style="background-image: url('https://i.vimeocdn.com/video/1686479842-0d2a6e2b8c0d4b8e9f4e1d2c3f4e5d6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2');"
-                    >
-                        <!-- Play icon -->
-                        <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
-                            <svg class="w-12 h-12 ml-2 text-black" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z"/>
-                            </svg>
-                        </div>
-                    </div>
-
-                    <!-- FULLSCREEN BUTTON - Top right corner -->
-                    <button
-                        id="corporate-fullscreen-btn"
-                        class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
-                        title="Fullscreen"
-                    >
-                        <svg class="w-7 h-7 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
-                        </svg>
-                    </button>
-                </div>
+          <!-- Thumbnail overlay -->
+          <div
+            id="corporate-video-thumb"
+            class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10"
+            style="background-image: url('https://lh3.googleusercontent.com/d/1CX13zsNztyhib32nWdJSGOIwa0RoUwu7')">
+            <!-- Play icon -->
+            <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
+              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
             </div>
+          </div>
+
+          <!-- FULLSCREEN BUTTON - Top right corner -->
+          <button
+            id="corporate-fullscreen-btn"
+            class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
+            title="Fullscreen">
+            <svg class="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4">
+              </path>
+            </svg>
+          </button>
         </div>
-
-        <!-- 2. Real Life Stories -->
-        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-            <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Real Life Stories</h2>
-            <div class="w-full md:w-1/2 relative">
-                <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="brand-video-wrapper">
-                    <!-- Vimeo iframe -->
-                    <iframe
-                        id="brand-video-iframe"
-                        class="absolute inset-0 w-full h-full"
-                        src="https://player.vimeo.com/video/1144075651?autoplay=0"
-                        frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowfullscreen
-                    ></iframe>
-
-                    <!-- Thumbnail overlay -->
-                    <div
-                        id="brand-video-thumb"
-                        class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg"
-                        style="background-image: url('https://i.vimeocdn.com/video/1686479850-1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e2');"
-                    >
-                        <!-- Play icon -->
-                        <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
-                            <svg class="w-12 h-12 ml-2 text-black" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z"/>
-                            </svg>
-                        </div>
-                    </div>
-
-                    <!-- FULLSCREEN BUTTON - Top right corner -->
-                    <button
-                        id="brand-fullscreen-btn"
-                        class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
-                        title="Fullscreen"
-                    >
-                        <svg class="w-7 h-7 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- 3. Social Media Content -->
-        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-            <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Social Media Content</h2>
-            <div class="w-full md:w-1/2 relative">
-                <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="social-video-wrapper">
-                    <!-- Vimeo iframe -->
-                    <iframe
-                        id="social-video-iframe"
-                        class="absolute inset-0 w-full h-full"
-                        src="https://player.vimeo.com/video/1117351717?autoplay=0"
-                        frameborder="0"
-                        allow="fullscreen"
-                        allowfullscreen
-                    ></iframe>
-
-                    <!-- Thumbnail overlay -->
-                    <div
-                        id="social-video-thumb"
-                        class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg"
-                        style="background-image: url('https://lh3.googleusercontent.com/d/1wHAlDYZ-7Hc_jRhOSgS-2f7JevOJ8Cok');"
-                    >
-                        <!-- Play icon -->
-                        <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
-                            <svg class="w-12 h-12 ml-2 text-black" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z"/>
-                            </svg>
-                        </div>
-                    </div>
-
-                    <!-- VISIBLE FULLSCREEN BUTTON - Top right corner -->
-                    <button
-                        id="fullscreen-btn"
-                        class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
-                        title="Fullscreen"
-                    >
-                        <svg class="w-7 h-7 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center max-w-4xl mx-auto">
-          
-            <p class="text-xl md:text-2 tracking-wide text-gray-300 leading-tight">
-                Ardellia Prod offers a "Controled cost - Maximum impression"
-            </p>
-        </div>
+      </div>
     </div>
+
+
+
+
+
+    <!-- 2. Real Life Stories -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+      <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Real Life Stories</h2>
+      <div class="w-full md:w-1/2 relative">
+        <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="brand-video-wrapper">
+          <!-- Vimeo iframe -->
+          <iframe
+            id="brand-video-iframe"
+            class="absolute inset-0 w-full h-full"
+            src="https://player.vimeo.com/video/1144075651?autoplay=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+
+          <!-- Thumbnail overlay -->
+          <div
+            id="brand-video-thumb"
+            class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10"
+            style="background-image: url('https://lh3.googleusercontent.com/d/18u3jU288FM8iGrBseFV0Tt0oj-1Dzdd_')">
+            <!-- Play icon -->
+            <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
+              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- FULLSCREEN BUTTON - Top right corner -->
+          <button
+            id="brand-fullscreen-btn"
+            class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
+            title="Fullscreen">
+            <svg class="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Social Media Content -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+      <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Social Media Content</h2>
+      <div class="w-full md:w-1/2 relative">
+        <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="social-video-wrapper">
+          <!-- Vimeo iframe -->
+          <iframe
+            id="social-video-iframe"
+            class="absolute inset-0 w-full h-full"
+            src="https://player.vimeo.com/video/1117351717?autoplay=0"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+
+          <!-- Thumbnail overlay -->
+          <div
+            id="social-video-thumb"
+            class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10"
+            style="background-image: url('https://lh3.googleusercontent.com/d/1qUf_QG_549-KMC5mUJ5x9E1hT9nvbDm1')">
+            <!-- Play icon -->
+            <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
+              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- FULLSCREEN BUTTON - Top right corner -->
+          <button
+            id="social-fullscreen-btn"
+            class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
+            title="Fullscreen">
+            <svg class="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center max-w-4xl mx-auto">
+      <p class="text-xl md:text-2xl tracking-wide text-gray-300 leading-tight">
+        Ardellia Prod offers a <span class="text-bold">"Controled cost - Maximum impression"</span>
+      </p>
+    </div>
+  </div>
 </section>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Corporate video controls
-    const corporateThumb = document.getElementById('corporate-video-thumb');
-    const corporateIframe = document.getElementById('corporate-video-iframe');
-    const corporateFullscreenBtn = document.getElementById('corporate-fullscreen-btn');
-
-    if (corporateThumb && corporateIframe && corporateFullscreenBtn) {
-        corporateThumb.addEventListener('click', function(e) {
-            if (!corporateIframe.src.includes('autoplay=1')) {
-                corporateIframe.src = corporateIframe.src.replace('autoplay=0', 'autoplay=1');
-            }
-            corporateThumb.style.opacity = '0';
-            setTimeout(() => corporateThumb.style.display = 'none', 300);
-        });
-
-        corporateFullscreenBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            if (!corporateIframe.src.includes('autoplay=1')) {
-                corporateIframe.src = corporateIframe.src.replace('autoplay=0', 'autoplay=1');
-            }
-            setTimeout(() => {
-                if (corporateIframe.requestFullscreen) {
-                    corporateIframe.requestFullscreen();
-                } else if (corporateIframe.webkitRequestFullscreen) {
-                    corporateIframe.webkitRequestFullscreen();
-                } else if (corporateIframe.msRequestFullscreen) {
-                    corporateIframe.msRequestFullscreen();
-                }
-            }, 100);
-            corporateThumb.style.opacity = '0';
-            setTimeout(() => corporateThumb.style.display = 'none', 300);
-        });
-    }
-
-    // Brand video controls
-    const brandThumb = document.getElementById('brand-video-thumb');
-    const brandIframe = document.getElementById('brand-video-iframe');
-    const brandFullscreenBtn = document.getElementById('brand-fullscreen-btn');
-
-    if (brandThumb && brandIframe && brandFullscreenBtn) {
-        brandThumb.addEventListener('click', function(e) {
-            if (!brandIframe.src.includes('autoplay=1')) {
-                brandIframe.src = brandIframe.src.replace('autoplay=0', 'autoplay=1');
-            }
-            brandThumb.style.opacity = '0';
-            setTimeout(() => brandThumb.style.display = 'none', 300);
-        });
-
-        brandFullscreenBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            if (!brandIframe.src.includes('autoplay=1')) {
-                brandIframe.src = brandIframe.src.replace('autoplay=0', 'autoplay=1');
-            }
-            setTimeout(() => {
-                if (brandIframe.requestFullscreen) {
-                    brandIframe.requestFullscreen();
-                } else if (brandIframe.webkitRequestFullscreen) {
-                    brandIframe.webkitRequestFullscreen();
-                } else if (brandIframe.msRequestFullscreen) {
-                    brandIframe.msRequestFullscreen();
-                }
-            }, 100);
-            brandThumb.style.opacity = '0';
-            setTimeout(() => brandThumb.style.display = 'none', 300);
-        });
-    }
-
-    // Social video controls (existing)
-    const socialThumb = document.getElementById('social-video-thumb');
-    const socialIframe = document.getElementById('social-video-iframe');
-    const socialFullscreenBtn = document.getElementById('fullscreen-btn');
-
-    if (socialThumb && socialIframe && socialFullscreenBtn) {
-        socialThumb.addEventListener('click', function(e) {
-            if (!socialIframe.src.includes('autoplay=1')) {
-                socialIframe.src = socialIframe.src.replace('autoplay=0', 'autoplay=1');
-            }
-            socialThumb.style.opacity = '0';
-            setTimeout(() => socialThumb.style.display = 'none', 300);
-        });
-
-        socialFullscreenBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            if (!socialIframe.src.includes('autoplay=1')) {
-                socialIframe.src = socialIframe.src.replace('autoplay=0', 'autoplay=1');
-            }
-            setTimeout(() => {
-                if (socialIframe.requestFullscreen) {
-                    socialIframe.requestFullscreen();
-                } else if (socialIframe.webkitRequestFullscreen) {
-                    socialIframe.webkitRequestFullscreen();
-                } else if (socialIframe.msRequestFullscreen) {
-                    socialIframe.msRequestFullscreen();
-                }
-            }, 100);
-            socialThumb.style.opacity = '0';
-            setTimeout(() => socialThumb.style.display = 'none', 300);
-        });
-    }
-});
-</script>
-<!-- ### PROJECTS END ### -->
+<!-- PROJECTS END -->
 
 
 
@@ -763,45 +671,103 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     </footer>
 
-    <!-- ### SCRIPTS START ### -->
-    <script>
-        document.getElementById('mobile-toggle').addEventListener('click', function() {
-            const nav = document.getElementById('desktop-nav');
-            nav.classList.toggle('hidden');
-            nav.classList.toggle('flex');
-            nav.classList.toggle('flex-col');
-            nav.classList.toggle('absolute');
-            nav.classList.toggle('top-16');
-            nav.classList.toggle('right-6');
-            nav.classList.toggle('bg-[#0a0f2e]');
-            nav.classList.toggle('p-4');
-            nav.classList.toggle('rounded-lg');
-            nav.classList.toggle('shadow-md');
-            nav.classList.toggle('space-y-4');
-            nav.classList.toggle('space-x-8');
-        });
-        
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Corporate video
+  const corporateThumb = document.getElementById("corporate-video-thumb");
+  const corporateIframe = document.getElementById("corporate-video-iframe");
+  const corporateFullscreenBtn = document.getElementById("corporate-fullscreen-btn");
 
-        // Social media custom thumbnail
-        const thumbBtn = document.getElementById('social-video-thumb');
-        if (thumbBtn) {
-            thumbBtn.addEventListener('click', function () {
-                thumbBtn.style.display = 'none';
-            });
-        }
-    </script>
-    <!-- ### SCRIPTS END ### -->
+  if (corporateThumb && corporateIframe) {
+    corporateThumb.addEventListener("click", function () {
+      if (!corporateIframe.src.includes("autoplay=1")) {
+        corporateIframe.src = corporateIframe.src.replace("autoplay=0", "autoplay=1");
+      }
+      corporateThumb.style.opacity = 0;
+      setTimeout(() => (corporateThumb.style.display = "none"), 300);
+    });
+  }
+
+  if (corporateFullscreenBtn && corporateIframe && corporateThumb) {
+    corporateFullscreenBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (!corporateIframe.src.includes("autoplay=1")) {
+        corporateIframe.src = corporateIframe.src.replace("autoplay=0", "autoplay=1");
+        corporateThumb.style.opacity = 0;
+        setTimeout(() => (corporateThumb.style.display = "none"), 300);
+      }
+      setTimeout(() => {
+        if (corporateIframe.requestFullscreen) corporateIframe.requestFullscreen();
+        else if (corporateIframe.webkitRequestFullscreen) corporateIframe.webkitRequestFullscreen();
+        else if (corporateIframe.msRequestFullscreen) corporateIframe.msRequestFullscreen();
+      }, 100);
+    });
+  }
+
+  // Real Life Stories
+  const brandThumb = document.getElementById("brand-video-thumb");
+  const brandIframe = document.getElementById("brand-video-iframe");
+  const brandFullscreenBtn = document.getElementById("brand-fullscreen-btn");
+
+  if (brandThumb && brandIframe) {
+    brandThumb.addEventListener("click", function () {
+      if (!brandIframe.src.includes("autoplay=1")) {
+        brandIframe.src = brandIframe.src.replace("autoplay=0", "autoplay=1");
+      }
+      brandThumb.style.opacity = 0;
+      setTimeout(() => (brandThumb.style.display = "none"), 300);
+    });
+  }
+
+  if (brandFullscreenBtn && brandIframe && brandThumb) {
+    brandFullscreenBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (!brandIframe.src.includes("autoplay=1")) {
+        brandIframe.src = brandIframe.src.replace("autoplay=0", "autoplay=1");
+        brandThumb.style.opacity = 0;
+        setTimeout(() => (brandThumb.style.display = "none"), 300);
+      }
+      setTimeout(() => {
+        if (brandIframe.requestFullscreen) brandIframe.requestFullscreen();
+        else if (brandIframe.webkitRequestFullscreen) brandIframe.webkitRequestFullscreen();
+        else if (brandIframe.msRequestFullscreen) brandIframe.msRequestFullscreen();
+      }, 100);
+    });
+  }
+
+  // Social Media Content
+  const socialThumb = document.getElementById("social-video-thumb");
+  const socialIframe = document.getElementById("social-video-iframe");
+  const socialFullscreenBtn = document.getElementById("social-fullscreen-btn");
+
+  if (socialThumb && socialIframe) {
+    socialThumb.addEventListener("click", function () {
+      if (!socialIframe.src.includes("autoplay=1")) {
+        socialIframe.src = socialIframe.src.replace("autoplay=0", "autoplay=1");
+      }
+      socialThumb.style.opacity = 0;
+      setTimeout(() => (socialThumb.style.display = "none"), 300);
+    });
+  }
+
+  if (socialFullscreenBtn && socialIframe && socialThumb) {
+    socialFullscreenBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (!socialIframe.src.includes("autoplay=1")) {
+        socialIframe.src = socialIframe.src.replace("autoplay=0", "autoplay=1");
+        socialThumb.style.opacity = 0;
+        setTimeout(() => (socialThumb.style.display = "none"), 300);
+      }
+      setTimeout(() => {
+        if (socialIframe.requestFullscreen) socialIframe.requestFullscreen();
+        else if (socialIframe.webkitRequestFullscreen) socialIframe.webkitRequestFullscreen();
+        else if (socialIframe.msRequestFullscreen) socialIframe.msRequestFullscreen();
+      }, 100);
+    });
+  }
+});
+</script>
+
 
 </body>
 </html>
