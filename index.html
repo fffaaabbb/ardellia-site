@@ -113,7 +113,19 @@
 
 <body class="text-[#F2F2F2]" style="background: radial-gradient(circle at center, #101841 0%, #000000 100%);">
 
+
+
+
+
+
+
+
+
+
+
+
     <!-- ### NAV START ### -->
+
     <nav class="fixed w-full bg-[#0a0f2e] z-50 shadow-sm">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold">
@@ -132,7 +144,21 @@
             </button>
         </div>
     </nav>
+
     <!-- ### NAV END ### -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- ### HERO START ### -->
 <section id="hero" class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
@@ -219,11 +245,193 @@
     </div>
   </div>
 </section>
+
+    <div class="section-divider my-16 max-w-6xl mx-auto"></div>
+
+
+
 <!-- ### HERO END ### -->
 
 
+
+
+
+
+
+<!-- PROJECTS START -->
+
+
+<section id="projects" class="py-16 px-6 max-w-6xl mx-auto">
+  <div class="space-y-16">
+    <h2 class="text-4xl md:text-5xl text-center tracking-wide">What we work on</h2>
+
+
+
+    <!-- 1. Corporate Communication -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+      <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Corporate Communication</h2>
+      <div class="w-full md:w-1/2 relative">
+        <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="corporate-video-wrapper">
+          <!-- Vimeo iframe -->
+          <iframe
+            id="corporate-video-iframe"
+            class="absolute inset-0 w-full h-full"
+            src="https://player.vimeo.com/video/1117037290?h=3ecaa2c3ca&autoplay=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+
+          <!-- Thumbnail overlay -->
+          <div
+            id="corporate-video-thumb"
+            class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10"
+            style="background-image: url('https://lh3.googleusercontent.com/d/1CX13zsNztyhib32nWdJSGOIwa0RoUwu7')">
+            <!-- Play icon -->
+            <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
+              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- FULLSCREEN BUTTON - Top right corner -->
+          <button
+            id="corporate-fullscreen-btn"
+            class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
+            title="Fullscreen">
+            <svg class="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- 2. Real Life Stories -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+      <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Real Life Stories</h2>
+      <div class="w-full md:w-1/2 relative">
+        <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="brand-video-wrapper">
+          <!-- Vimeo iframe -->
+          <iframe
+            id="brand-video-iframe"
+            class="absolute inset-0 w-full h-full"
+            src="https://player.vimeo.com/video/1144075651?autoplay=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+
+          <!-- Thumbnail overlay -->
+          <div
+            id="brand-video-thumb"
+            class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10"
+            style="background-image: url('https://lh3.googleusercontent.com/d/18u3jU288FM8iGrBseFV0Tt0oj-1Dzdd_')">
+            <!-- Play icon -->
+            <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
+              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- FULLSCREEN BUTTON - Top right corner -->
+          <button
+            id="brand-fullscreen-btn"
+            class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
+            title="Fullscreen">
+            <svg class="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- 3. Social Media Content -->
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+      <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Social Media Content</h2>
+      <div class="w-full md:w-1/2 relative">
+        <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="social-video-wrapper">
+          <!-- Vimeo iframe -->
+          <iframe
+            id="social-video-iframe"
+            class="absolute inset-0 w-full h-full"
+            src="https://player.vimeo.com/video/1117351717?autoplay=0"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+
+          <!-- Thumbnail overlay -->
+          <div
+            id="social-video-thumb"
+            class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10"
+            style="background-image: url('https://lh3.googleusercontent.com/d/1qUf_QG_549-KMC5mUJ5x9E1hT9nvbDm1')">
+            <!-- Play icon -->
+            <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
+              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- FULLSCREEN BUTTON - Top right corner -->
+          <button
+            id="social-fullscreen-btn"
+            class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
+            title="Fullscreen">
+            <svg class="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center max-w-4xl mx-auto">
+      <p class="text-xl md:text-2xl tracking-wide text-gray-300 leading-tight">
+        Ardellia Prod offers a <span class="text-bold">"Controled cost - Maximum impression"</span>
+      </p>
+    </div>
+  </div>
+</section>
     <div class="section-divider my-16 max-w-6xl mx-auto"></div>
+
+
+<!-- PROJECTS END -->
+
+
+
+
+
+
+
+
+
+
+
 <!-- ### LINKEDIN START ### -->
+
+
 <section id="linkedin" class="py-16 px-6 max-w-6xl mx-auto">
   <h2 class="text-4xl md:text-5xl text-center tracking-wide">LinkedIn Highlights</h2>
   <p class="text-sm text-gray-300 text-center mt-3 mb-10">
@@ -337,18 +545,27 @@
     </p>
   </div>
 </section>
+    <div class="section-divider my-16 max-w-6xl mx-auto"></div>
+
+
 <!-- ### LINKEDIN END ### -->
 
 
 
-  <!-- Divider -->
-    <div class="section-divider my-16 max-w-6xl mx-auto"></div>
 
 
 
 
 
-    <!-- Instagram Reels Section -->
+
+
+
+
+
+
+<!-- ### INSTAGRAM START ### -->
+
+
 <section id="instagram" class="py-16 px-6 max-w-6xl mx-auto">
     <h2 class="text-4xl md:text-5xl text-center tracking-wide">Instagram Reels</h2>
     <p class="text-sm text-gray-300 text-center mt-3 mb-10">
@@ -407,6 +624,8 @@
 </div>
 
         <!-- Instagram script once -->
+
+
         <script async src="//www.instagram.com/embed.js"></script>
 
         <div class="text-center mt-10">
@@ -418,178 +637,25 @@
             </p>
         </div>
     </section>
-
-  
-  <div class="section-divider my-16 max-w-6xl mx-auto"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- PROJECTS START -->
-<section id="projects" class="py-16 px-6 max-w-6xl mx-auto">
-  <div class="space-y-16">
-    <h2 class="text-4xl md:text-5xl text-center tracking-wide">What we work on</h2>
-
-    <!-- 1. Corporate Communication -->
-    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-      <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Corporate Communication</h2>
-      <div class="w-full md:w-1/2 relative">
-        <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="corporate-video-wrapper">
-          <!-- Vimeo iframe -->
-          <iframe
-            id="corporate-video-iframe"
-            class="absolute inset-0 w-full h-full"
-            src="https://player.vimeo.com/video/1117037290?h=3ecaa2c3ca&autoplay=0"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-
-          <!-- Thumbnail overlay -->
-          <div
-            id="corporate-video-thumb"
-            class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10"
-            style="background-image: url('https://lh3.googleusercontent.com/d/1CX13zsNztyhib32nWdJSGOIwa0RoUwu7')">
-            <!-- Play icon -->
-            <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
-              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z"></path>
-              </svg>
-            </div>
-          </div>
-
-          <!-- FULLSCREEN BUTTON - Top right corner -->
-          <button
-            id="corporate-fullscreen-btn"
-            class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
-            title="Fullscreen">
-            <svg class="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
-                    d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4">
-              </path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-    <!-- 2. Real Life Stories -->
-    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-      <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Real Life Stories</h2>
-      <div class="w-full md:w-1/2 relative">
-        <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="brand-video-wrapper">
-          <!-- Vimeo iframe -->
-          <iframe
-            id="brand-video-iframe"
-            class="absolute inset-0 w-full h-full"
-            src="https://player.vimeo.com/video/1144075651?autoplay=0"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-
-          <!-- Thumbnail overlay -->
-          <div
-            id="brand-video-thumb"
-            class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10"
-            style="background-image: url('https://lh3.googleusercontent.com/d/18u3jU288FM8iGrBseFV0Tt0oj-1Dzdd_')">
-            <!-- Play icon -->
-            <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
-              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z"></path>
-              </svg>
-            </div>
-          </div>
-
-          <!-- FULLSCREEN BUTTON - Top right corner -->
-          <button
-            id="brand-fullscreen-btn"
-            class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
-            title="Fullscreen">
-            <svg class="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
-                    d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4">
-              </path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- 3. Social Media Content -->
-    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-      <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Social Media Content</h2>
-      <div class="w-full md:w-1/2 relative">
-        <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="social-video-wrapper">
-          <!-- Vimeo iframe -->
-          <iframe
-            id="social-video-iframe"
-            class="absolute inset-0 w-full h-full"
-            src="https://player.vimeo.com/video/1117351717?autoplay=0"
-            frameborder="0"
-            allowfullscreen>
-          </iframe>
-
-          <!-- Thumbnail overlay -->
-          <div
-            id="social-video-thumb"
-            class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10"
-            style="background-image: url('https://lh3.googleusercontent.com/d/1qUf_QG_549-KMC5mUJ5x9E1hT9nvbDm1')">
-            <!-- Play icon -->
-            <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
-              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z"></path>
-              </svg>
-            </div>
-          </div>
-
-          <!-- FULLSCREEN BUTTON - Top right corner -->
-          <button
-            id="social-fullscreen-btn"
-            class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
-            title="Fullscreen">
-            <svg class="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
-                    d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4">
-              </path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-center max-w-4xl mx-auto">
-      <p class="text-xl md:text-2xl tracking-wide text-gray-300 leading-tight">
-        Ardellia Prod offers a <span class="text-bold">"Controled cost - Maximum impression"</span>
-      </p>
-    </div>
-  </div>
-</section>
-<!-- PROJECTS END -->
-
-
-
     <div class="section-divider my-16 max-w-6xl mx-auto"></div>
 
+
+  <!-- ### INSTAGRAM END ### -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- ### VALUES START ### -->
+
 <section id="values" class="py-16 px-16 max-w-6xl mx-auto">
     <h2 class="text-4xl md:text-5xl mb-12 text-center tracking-wide">
         MY PRODUCTION APPROACH
@@ -631,10 +697,19 @@
         </div>
     </div>
 </section>
+    <div class="section-divider my-16 max-w-6xl mx-auto"></div>
+
 <!-- ### VALUES END ### -->
 
 
-    <div class="section-divider my-16 max-w-6xl mx-auto"></div>
+
+
+
+
+
+
+
+
 
     <!-- ### CONTACT START ### -->
     <section id="contact" class="py-16 px-6 max-w-6xl mx-auto">
