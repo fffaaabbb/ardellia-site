@@ -3,117 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ardellia - Fabien Gailledrat - Professional Video Production Paris & Southeast Asia</title>
+    <title>Ardellia - Fabien Gailledrat - Professional Video Production Paris Southeast Asia</title>
     <meta property="og:site_name" content="Ardellia">
     <meta property="og:title" content="Ardellia - Professional Video Production">
     <meta name="twitter:site" content="@ardelliaprod">
-    <meta name="google-site-verification" content="1teCUYi0Hw9fELQULDi9Q9B7eNtbHz8Y48Q0YrbIV3U" />
+    <meta name="google-site-verification" content="1teCUYi0Hw9fELQULDi9Q9B7eNtbHz8Y48Q0YrbIV3U">
     
     <!-- WebSite Schema Markup -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Ardellia",
-      "alternateName": "Ardellia Studio",
-      "url": "https://ardellia.netlify.app",
-      "description": "Professional Video Production Paris & Southeast Asia by Fabien Gailledrat",
-      "sameAs": [
-        "https://www.linkedin.com/in/fabien-gailledrat/",
-        "https://www.instagram.com/ardelliaprod/"
-      ]
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Ardellia",
+        "alternateName": "Ardellia Studio",
+        "url": "https://ardellia.netlify.app",
+        "description": "Professional Video Production Paris Southeast Asia by Fabien Gailledrat",
+        "sameAs": [
+            "https://www.linkedin.com/in/fabien-gailledrat/",
+            "https://www.instagram.com/ardelliaprod"
+        ]
     }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="icon" type="image/png" sizes="32x32" href="https://lh3.googleusercontent.com/d/1azWHajm-d2B7yT7Vs464AliDoyginsDn">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600;700&display=swap">
 
     <!-- Organization Schema -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Ardellia Studio",
-      "url": "https://ardellia.netlify.app",
-      "logo": "https://lh3.googleusercontent.com/d/1aawM2QW_CLa1ONqjaFKFSDtGSp_U7CTn",
-      "founder": {
-        "@type": "Person",
-        "name": "Fabien Gailledrat"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/fabien-gailledrat/",
-        "https://www.instagram.com/ardelliaprod/"
-      ]
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Ardellia Studio",
+        "url": "https://ardellia.netlify.app",
+        "logo": "https://lh3.googleusercontent.com/d1aawM2QWCLa1ONqjaFKFSDtGSpU7CTn",
+        "founder": {
+            "@type": "Person",
+            "name": "Fabien Gailledrat"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/fabien-gailledrat/",
+            "https://www.instagram.com/ardelliaprod"
+        ]
     }
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/d/1azWHajm-d2B7yT7Vs464AliDoyginsDn">
-
-    <!-- ### FONTS & GLOBAL STYLES START ### -->
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/d1azWHajm-d2B7yT7Vs464AliDoyginsDn">
+    
+    <!-- FONTS + GLOBAL STYLES START -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600;700&display=swap">
-
     <style>
         body {
             font-family: 'Signika', sans-serif;
             scroll-behavior: smooth;
+            /* Nebula background animation */
+            animation: nebula-shift 15s ease-in-out infinite alternate;
         }
-
         h1, h2, h3 {
             font-family: 'Signika', sans-serif;
             font-weight: 700;
             letter-spacing: 1px;
         }
-
-        #projects h2 {
+        projects h2 {
             font-weight: 700;
         }
-
-        .text-thin {
-            font-weight: 300;
-        }
-
-        .text-regular {
-            font-weight: 400;
-        }
-
-        .text-bold {
-            font-weight: 700;
-        }
-
+        .text-thin { font-weight: 300; }
+        .text-regular { font-weight: 400; }
+        .text-bold { font-weight: 700; }
         .gradient-text {
             background: linear-gradient(90deg, #3b82f6, #8b5cf6);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
         }
-
         .testimonial-card {
             transition: all 0.3s ease;
         }
-
         .testimonial-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
-
         .social-icon {
             transition: all 0.3s ease;
         }
-
         .social-icon:hover {
             transform: scale(1.1);
         }
+/* Nebula background animation */
+body {
+    animation: nebula-shift 15s ease-in-out infinite alternate;
+}
+@keyframes nebula-shift {
+    0% { background-position: 30% 20%, 80% 80%, center; }
+    100% { background-position: 20% 30%, 90% 70%, center; }
+}
 
         .section-divider {
             height: 2px;
             background: linear-gradient(90deg, rgba(59, 130, 246, 0.2), rgba(255, 255, 255, 0.2), rgba(59, 130, 246, 0.2));
         }
+        /* Nebula animation keyframes */
+        @keyframes nebula-shift {
+            0% { background-position: 30% 20%, 80% 80%, center; }
+            100% { background-position: 20% 30%, 90% 70%, center; }
+        }
     </style>
-    <!-- ### FONTS & GLOBAL STYLES END ### -->
+    <!-- FONTS + GLOBAL STYLES END -->
 </head>
+
 
 <body class="text-[#F2F2F2]" style="background: radial-gradient(circle at center, #101841 0%, #000000 100%);">
 
