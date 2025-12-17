@@ -8,7 +8,7 @@
     <meta property="og:title" content="Ardellia - Professional Video Production">
     <meta name="twitter:site" content="@ardelliaprod">
     <meta name="google-site-verification" content="1teCUYi0Hw9fELQULDi9Q9B7eNtbHz8Y48Q0YrbIV3U">
-    
+
     <!-- WebSite Schema Markup -->
     <script type="application/ld+json">
     {
@@ -46,97 +46,124 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/d1azWHajm-d2B7yT7Vs464AliDoyginsDn">
-    
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/d/1azWHajm-d2B7yT7Vs464AliDoyginsDn">
+
     <!-- FONTS + GLOBAL STYLES START -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600;700&display=swap">
     <style>
         body {
             font-family: 'Signika', sans-serif;
-            scroll-behavior: smooth;
-            /* Nebula background animation */
-            animation: nebula-shift 15s ease-in-out infinite alternate;
+            background: radial-gradient(circle at center, #0a0f2e 0%, #000000 100%);
+            color: #F2F2F2;
+            line-height: 1.6;
         }
-        h1, h2, h3 {
-            font-family: 'Signika', sans-serif;
+        h1, h2, h3, h4 {
             font-weight: 700;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
         }
-        projects h2 {
-            font-weight: 700;
+        p {
+            color: #d1d5db;
+            margin-bottom: 1rem;
         }
-        .text-thin { font-weight: 300; }
-        .text-regular { font-weight: 400; }
-        .text-bold { font-weight: 700; }
-        .gradient-text {
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+        a {
+            color: #60a5fa;
+            transition: color 0.3s;
         }
-        .testimonial-card {
-            transition: all 0.3s ease;
+        a:hover {
+            color: #3b82f6;
         }
-        .testimonial-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        .social-icon {
-            transition: all 0.3s ease;
-        }
-        .social-icon:hover {
-            transform: scale(1.1);
-        }
-/* Nebula background animation */
-body {
-    animation: nebula-shift 15s ease-in-out infinite alternate;
-}
-@keyframes nebula-shift {
-    0% { background-position: 30% 20%, 80% 80%, center; }
-    100% { background-position: 20% 30%, 90% 70%, center; }
-}
 
-        .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, rgba(59, 130, 246, 0.2), rgba(255, 255, 255, 0.2), rgba(59, 130, 246, 0.2));
+        /* Cartes et effets de survol */
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        /* Nebula animation keyframes */
-        @keyframes nebula-shift {
-            0% { background-position: 30% 20%, 80% 80%, center; }
-            100% { background-position: 20% 30%, 90% 70%, center; }
+        .card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-2px);
+        }
+
+        /* Boutons */
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #3b82f6, #2563eb);
+            color: white;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Section divider */
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            margin: 3rem auto;
+            width: 100%;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .md\:w-1\/2 {
+                width: 100%;
+            }
+            .md\:flex-row {
+                flex-direction: column;
+            }
+        }
+
+        /* Instagram embed */
+        .insta-mask {
+            position: relative;
+            width: 100%;
+            height: 410px;
+            overflow: hidden;
+            border-radius: 16px;
+        }
+        .insta-mask-inner {
+            position: absolute;
+            top: -60px;
+            left: 0;
+            width: 100%;
+            transform: scale(1.04);
+            transform-origin: top center;
+        }
+        .insta-mask-inner blockquote,
+        .insta-mask-inner iframe {
+            width: 100% !important;
+            max-width: none !important;
         }
     </style>
     <!-- FONTS + GLOBAL STYLES END -->
 </head>
 
-
-<body class="text-[#F2F2F2]" style="background: radial-gradient(circle at center, #101841 0%, #000000 100%);">
-
-
-
-
-
-
-
-
-
-
+<body>
 
 <!-- NAV START -->
-
-<nav class="fixed w-full bg-0a0f2e z-50 shadow-lg backdrop-blur-sm border-b border-gray-800">
+<nav class="fixed w-full bg-0a0f2e/90 z-50 shadow-lg backdrop-blur-sm border-b border-gray-800">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
     <a href="#hero" class="text-xl font-bold flex items-center">
       <img src="https://lh3.googleusercontent.com/d/1aawM2QW_CLa1ONqjaFKFSDtGSp_U7CTn" alt="Ardellia" class="h-8" loading="lazy">
     </a>
     <!-- Desktop nav -->
     <div class="hidden md:flex space-x-8" id="desktop-nav">
-      <a href="#hero" class="hover:text-03A6A6 transition">About</a>
-      <a href="#projects" class="hover:text-03A6A6 transition">Portfolio</a>
-      <a href="#linkedin" class="hover:text-03A6A6 transition">LinkedIn</a>
-      <a href="#instagram" class="hover:text-03A6A6 transition">Instagram</a>
-      <a href="#values" class="hover:text-03A6A6 transition">Approach</a>
-      <a href="#contact" class="hover:text-03A6A6 transition">Contact</a>
+      <a href="#hero" class="hover:text-3b82f6 transition">About</a>
+      <a href="#projects" class="hover:text-3b82f6 transition">Portfolio</a>
+      <a href="#linkedin" class="hover:text-3b82f6 transition">LinkedIn</a>
+      <a href="#instagram" class="hover:text-3b82f6 transition">Instagram</a>
+      <a href="#values" class="hover:text-3b82f6 transition">Approach</a>
+      <a href="#contact" class="hover:text-3b82f6 transition">Contact</a>
     </div>
     <!-- Mobile button -->
     <button id="mobile-toggle" class="md:hidden focus:outline-none">
@@ -144,280 +171,134 @@ body {
     </button>
   </div>
 </nav>
-
 <!-- NAV END -->
 
-
-  
-  
-  
-  
-  
-  
-
 <!-- MOBILE MENU -->
-<div id="mobile-menu"
-     class="md:hidden fixed top-16 right-0 left-0 bg-0a0f2e/80 backdrop-blur-sm border-t border-gray-800 hidden z-40">
+<div id="mobile-menu" class="md:hidden fixed top-16 right-0 left-0 bg-0a0f2e/80 backdrop-blur-sm border-t border-gray-800 hidden z-40">
   <div class="flex flex-col px-6 py-4 space-y-4 text-right">
-    <a href="#hero" class="hover:text-03A6A6 transition">About</a>
-    <a href="#projects" class="hover:text-03A6A6 transition">Portfolio</a>
-    <a href="#linkedin" class="hover:text-03A6A6 transition">LinkedIn</a>
-    <a href="#instagram" class="hover:text-03A6A6 transition">Instagram</a>
-    <a href="#values" class="hover:text-03A6A6 transition">Approach</a>
-    <a href="#contact" class="hover:text-03A6A6 transition">Contact</a>
+    <a href="#hero" class="hover:text-3b82f6 transition">About</a>
+    <a href="#projects" class="hover:text-3b82f6 transition">Portfolio</a>
+    <a href="#linkedin" class="hover:text-3b82f6 transition">LinkedIn</a>
+    <a href="#instagram" class="hover:text-3b82f6 transition">Instagram</a>
+    <a href="#values" class="hover:text-3b82f6 transition">Approach</a>
+    <a href="#contact" class="hover:text-3b82f6 transition">Contact</a>
   </div>
 </div>
 <!-- MOBILE MENU -->
 
-
-
-
-
-  
-  
-  
-
-<!-- ### HERO START ### -->
+<!-- HERO START -->
 <section id="hero" class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
-  <div class="flex flex-col md:flex-row items-center">
-
+  <div class="flex flex-col md:flex-row items-center gap-12">
     <!-- IMAGE LEFT -->
-    <div class="md:w-1/2 flex justify-center mb-12 md:mb-0">
+    <div class="md:w-1/2 flex justify-center">
       <div class="relative">
-        <div
-          class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-2xl opacity-20 absolute -z-10 top-6 left-6">
-        </div>
-        <div
-          class="w-64 h-64 md:w-80 md:h-80 bg-gray-200 rounded-2xl overflow-hidden shadow-xl">
-          <img
-            src="https://lh3.googleusercontent.com/d/1se-62JJCuzkBucuZks3ZniCMH63X4VMl"
-            alt="Fabien Gailledrat"
-            class="w-full h-full object-cover"
-            loading="lazy">
+        <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-2xl opacity-20 absolute -z-10 top-6 left-6"></div>
+        <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-200 rounded-2xl overflow-hidden shadow-xl">
+          <img src="https://lh3.googleusercontent.com/d/1se-62JJCuzkBucuZks3ZniCMH63X4VMl" alt="Fabien Gailledrat" class="w-full h-full object-cover">
         </div>
       </div>
     </div>
-
     <!-- TEXT RIGHT -->
-    <div class="md:w-1/2">
-      <!-- Big Ardellia logo -->
-      <div class="mb-6">
-        <img
-          src="https://lh3.googleusercontent.com/d/1aawM2QW_CLa1ONqjaFKFSDtGSp_U7CTn"
-          alt="Ardellia"
-          class="h-32 md:h-40"
-          loading="lazy">
-      </div>
-
-      <!-- Bullet points with arrows -->
-      <ul class="text-gray-300 text-thin space-y-4 mb-8 list-none">
+    <div class="md:w-1/2 space-y-6">
+      <img src="https://lh3.googleusercontent.com/d/1aawM2QW_CLa1ONqjaFKFSDtGSp_U7CTn" alt="Ardellia" class="h-32 md:h-40 mb-6">
+      <ul class="space-y-4">
         <li class="flex items-start">
-          <svg class="w-5 h-5 text-[#3b82f6] mr-3 flex-shrink-0 mt-0.5"
-               fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          <svg class="w-5 h-5 text-[#3b82f6] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
           </svg>
           Created by Fabien Gailledrat in 2017
         </li>
         <li class="flex items-start">
-          <svg class="w-5 h-5 text-[#3b82f6] mr-3 flex-shrink-0 mt-0.5"
-               fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          <svg class="w-5 h-5 text-[#3b82f6] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
           </svg>
-          Video Production &amp; Post-Production Specialist
+          Video Production & Post-Production Specialist
         </li>
         <li class="flex items-start">
-          <svg class="w-5 h-5 text-[#3b82f6] mr-3 flex-shrink-0 mt-0.5"
-               fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          <svg class="w-5 h-5 text-[#3b82f6] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
           </svg>
-          25+ years delivering video content for TV programs, brands, organisations,
-          associations, artists...
+          25+ years delivering video content for TV programs, brands, organisations, associations, artists...
         </li>
         <li class="flex items-start">
-          <svg class="w-5 h-5 text-[#3b82f6] mr-3 flex-shrink-0 mt-0.5"
-               fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          <svg class="w-5 h-5 text-[#3b82f6] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
           </svg>
           Shooting in Paris and Southeast Asia
         </li>
         <li class="flex items-start">
-          <svg class="w-5 h-5 text-[#3b82f6] mr-3 flex-shrink-0 mt-0.5"
-               fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          <svg class="w-5 h-5 text-[#3b82f6] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
           </svg>
           Editing worldwide
         </li>
       </ul>
-
-      <a
-        href="#contact"
-        class="bg-gradient-to-r from-[#3b82f6] to-[#2563eb] text-white px-8 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300 inline-block text-bold">
-        Need a video ?
-      </a>
+      <a href="#contact" class="btn btn-primary">Need a video ?</a>
     </div>
   </div>
 </section>
-
-    <div class="section-divider my-16 max-w-6xl mx-auto"></div>
-
-
-
-<!-- ### HERO END ### -->
-
-
-
-
-
-
+<div class="section-divider my-16 max-w-6xl mx-auto"></div>
+<!-- HERO END -->
 
 <!-- PROJECTS START -->
-
-
 <section id="projects" class="py-16 px-6 max-w-6xl mx-auto">
   <div class="space-y-16">
     <h2 class="text-4xl md:text-5xl text-center tracking-wide">Projects</h2>
 
-
-
     <!-- 1. Corporate Communication -->
     <div class="flex flex-col md:flex-row items-center justify-between gap-8">
       <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Corporate Communication</h2>
-      <div class="w-full md:w-1/2 relative">
-        <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="corporate-video-wrapper">
-          <!-- Vimeo iframe -->
-          <iframe
-            id="corporate-video-iframe"
-            class="absolute inset-0 w-full h-full"
-            src="https://player.vimeo.com/video/1117037290?h=3ecaa2c3ca&autoplay=0"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-
-          <!-- Thumbnail overlay -->
-          <div
-            id="corporate-video-thumb"
-            class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10"
-            style="background-image: url('https://lh3.googleusercontent.com/d/1CX13zsNztyhib32nWdJSGOIwa0RoUwu7')">
-            <!-- Play icon -->
+      <div class="w-full md:w-1/2 relative card">
+        <div class="relative w-full aspect-video rounded-lg overflow-hidden" id="corporate-video-wrapper">
+          <iframe id="corporate-video-iframe" class="absolute inset-0 w-full h-full" src="https://player.vimeo.com/video/1117037290?h=3ecaa2c3ca&autoplay=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <div id="corporate-video-thumb" class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10" style="background-image: url('https://lh3.googleusercontent.com/d/1CX13zsNztyhib32nWdJSGOIwa0RoUwu7')">
             <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
-              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z"></path>
-              </svg>
+              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
             </div>
           </div>
-
-          <!-- FULLSCREEN BUTTON - Top right corner -->
-          <button
-            id="corporate-fullscreen-btn"
-            class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
-            title="Fullscreen">
+          <button id="corporate-fullscreen-btn" class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white" title="Fullscreen">
             <svg class="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
-                    d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4">
-              </path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4"></path>
             </svg>
           </button>
         </div>
       </div>
     </div>
-
-
-
-
-
-
 
     <!-- 2. Real Life Stories -->
     <div class="flex flex-col md:flex-row items-center justify-between gap-8">
       <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Real Life Stories</h2>
-      <div class="w-full md:w-1/2 relative">
-        <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="brand-video-wrapper">
-          <!-- Vimeo iframe -->
-          <iframe
-            id="brand-video-iframe"
-            class="absolute inset-0 w-full h-full"
-            src="https://player.vimeo.com/video/1144075651?autoplay=0"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-
-          <!-- Thumbnail overlay -->
-          <div
-            id="brand-video-thumb"
-            class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10"
-            style="background-image: url('https://lh3.googleusercontent.com/d/18u3jU288FM8iGrBseFV0Tt0oj-1Dzdd_')">
-            <!-- Play icon -->
+      <div class="w-full md:w-1/2 relative card">
+        <div class="relative w-full aspect-video rounded-lg overflow-hidden" id="brand-video-wrapper">
+          <iframe id="brand-video-iframe" class="absolute inset-0 w-full h-full" src="https://player.vimeo.com/video/1144075651?autoplay=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <div id="brand-video-thumb" class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10" style="background-image: url('https://lh3.googleusercontent.com/d/18u3jU288FM8iGrBseFV0Tt0oj-1Dzdd_')">
             <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
-              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z"></path>
-              </svg>
+              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
             </div>
           </div>
-
-          <!-- FULLSCREEN BUTTON - Top right corner -->
-          <button
-            id="brand-fullscreen-btn"
-            class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
-            title="Fullscreen">
+          <button id="brand-fullscreen-btn" class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white" title="Fullscreen">
             <svg class="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
-                    d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4">
-              </path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4"></path>
             </svg>
           </button>
         </div>
       </div>
     </div>
 
-
-
-
-
-
-
     <!-- 3. Social Media Content -->
     <div class="flex flex-col md:flex-row items-center justify-between gap-8">
       <h2 class="text-4xl md:text-5xl tracking-wide md:w-1/2">Social Media Content</h2>
-      <div class="w-full md:w-1/2 relative">
-        <div class="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden" id="social-video-wrapper">
-          <!-- Vimeo iframe -->
-          <iframe
-            id="social-video-iframe"
-            class="absolute inset-0 w-full h-full"
-            src="https://player.vimeo.com/video/1117351717?autoplay=0"
-            frameborder="0"
-            allowfullscreen>
-          </iframe>
-
-          <!-- Thumbnail overlay -->
-          <div
-            id="social-video-thumb"
-            class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10"
-            style="background-image: url('https://lh3.googleusercontent.com/d/1qUf_QG_549-KMC5mUJ5x9E1hT9nvbDm1')">
-            <!-- Play icon -->
+      <div class="w-full md:w-1/2 relative card">
+        <div class="relative w-full aspect-video rounded-lg overflow-hidden" id="social-video-wrapper">
+          <iframe id="social-video-iframe" class="absolute inset-0 w-full h-full" src="https://player.vimeo.com/video/1117351717?autoplay=0" frameborder="0" allowfullscreen></iframe>
+          <div id="social-video-thumb" class="absolute inset-0 w-full h-full bg-cover bg-center cursor-pointer flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition-all duration-300 rounded-lg z-10" style="background-image: url('https://lh3.googleusercontent.com/d/1qUf_QG_549-KMC5mUJ5x9E1hT9nvbDm1')">
             <div class="w-24 h-24 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-200">
-              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z"></path>
-              </svg>
+              <svg class="w-12 h-12 ml-2 text-black fill-currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
             </div>
           </div>
-
-          <!-- FULLSCREEN BUTTON - Top right corner -->
-          <button
-            id="social-fullscreen-btn"
-            class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white"
-            title="Fullscreen">
+          <button id="social-fullscreen-btn" class="absolute top-4 right-4 z-20 w-14 h-14 bg-white shadow-2xl hover:shadow-3xl rounded-2xl flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-all duration-200 border-2 border-white" title="Fullscreen">
             <svg class="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
-                    d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4">
-              </path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 0-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4"></path>
             </svg>
           </button>
         </div>
@@ -426,132 +307,80 @@ body {
 
     <div class="text-center max-w-4xl mx-auto">
       <p class="text-xl md:text-2xl tracking-wide text-gray-300 leading-tight">
-        Ardellia Prod offers a <span class="text-bold">"Controled cost - Maximum impression"</span>
+        Ardellia Prod offers a <span class="font-bold">"Controlled cost - Maximum impression"</span>
       </p>
     </div>
   </div>
 </section>
-    <div class="section-divider my-16 max-w-6xl mx-auto"></div>
-
-
+<div class="section-divider my-16 max-w-6xl mx-auto"></div>
 <!-- PROJECTS END -->
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- LINKEDIN START -->
 <section id="linkedin" class="py-16 px-6 max-w-6xl mx-auto">
   <h2 class="text-4xl md:text-5xl text-center tracking-wide">LinkedIn Highlights</h2>
   <p class="text-sm text-gray-300 text-center mt-3 mb-10">Many of the videos we produce at Ardellia are shared on LinkedIn. Here are a few of the latest examples.</p>
-  
+
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     <!-- 1 -->
-    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300">
+    <div class="card">
       <div class="rounded-xl overflow-hidden shadow-xl mb-4">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7401616926050840576?compact=1" 
-                height="300" width="504" frameborder="0" allowfullscreen="" 
-                title="Credit Agricole CIB recruitment campaign" 
-                class="w-full border-0" style="height: 300px;"></iframe>
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7401616926050840576?compact=1" height="300" width="504" frameborder="0" allowfullscreen="" title="Credit Agricole CIB recruitment campaign" class="w-full border-0" style="height: 300px;"></iframe>
       </div>
       <p class="text-sm text-gray-300">Credit Agricole CIB recruitment campaign</p>
     </div>
-    
+
     <!-- 2 -->
-    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300">
+    <div class="card">
       <div class="rounded-xl overflow-hidden shadow-xl mb-4">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7303807731931533314?compact=1" 
-                height="300" width="504" frameborder="0" allowfullscreen="" 
-                title="Credit Agricole Payment Services – Women in Tech" 
-                class="w-full border-0" style="height: 300px;"></iframe>
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7303807731931533314?compact=1" height="300" width="504" frameborder="0" allowfullscreen="" title="Credit Agricole Payment Services – Women in Tech" class="w-full border-0" style="height: 300px;"></iframe>
       </div>
       <p class="text-sm text-gray-300">Credit Agricole Payment Services – Women in Tech / 8 March</p>
     </div>
-    
+
     <!-- 3 -->
-    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300">
+    <div class="card">
       <div class="rounded-xl overflow-hidden shadow-xl mb-4">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7344323980805193729?compact=1" 
-                height="300" width="504" frameborder="0" allowfullscreen="" 
-                title="Fluides Service – internal FAT with customer" 
-                class="w-full border-0" style="height: 300px;"></iframe>
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7344323980805193729?compact=1" height="300" width="504" frameborder="0" allowfullscreen="" title="Fluides Service – internal FAT with customer" class="w-full border-0" style="height: 300px;"></iframe>
       </div>
       <p class="text-sm text-gray-300">Fluides Service – internal FAT with customer</p>
     </div>
-    
+
     <!-- 4 -->
-    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300">
+    <div class="card">
       <div class="rounded-xl overflow-hidden shadow-xl mb-4">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7104371375737331712?compact=1" 
-                height="300" width="504" frameborder="0" allowfullscreen="" 
-                title="Credit Agricole CIB – HR alternance campaign" 
-                class="w-full border-0" style="height: 300px;"></iframe>
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7104371375737331712?compact=1" height="300" width="504" frameborder="0" allowfullscreen="" title="Credit Agricole CIB – HR alternance campaign" class="w-full border-0" style="height: 300px;"></iframe>
       </div>
       <p class="text-sm text-gray-300">Credit Agricole CIB – HR alternance campaign</p>
     </div>
-    
+
     <!-- 5 -->
-    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300">
+    <div class="card">
       <div class="rounded-xl overflow-hidden shadow-xl mb-4">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7376538290742784001?compact=1" 
-                height="300" width="504" frameborder="0" allowfullscreen="" 
-                title="Orano & CEA – innovation highlight" 
-                class="w-full border-0" style="height: 300px;"></iframe>
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7376538290742784001?compact=1" height="300" width="504" frameborder="0" allowfullscreen="" title="Orano & CEA – innovation highlight" class="w-full border-0" style="height: 300px;"></iframe>
       </div>
       <p class="text-sm text-gray-300">Orano & CEA – innovation highlight</p>
     </div>
-    
+
     <!-- 6 -->
-    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300">
+    <div class="card">
       <div class="rounded-xl overflow-hidden shadow-xl mb-4">
-        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7243828327067648000?compact=1" 
-                height="300" width="504" frameborder="0" allowfullscreen="" 
-                title="Interview & tutorial – Fabien Gailledrat" 
-                class="w-full border-0" style="height: 300px;"></iframe>
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7243828327067648000?compact=1" height="300" width="504" frameborder="0" allowfullscreen="" title="Interview & tutorial – Fabien Gailledrat" class="w-full border-0" style="height: 300px;"></iframe>
       </div>
       <p class="text-sm text-gray-300">Interview & tutorial – Fabien Gailledrat</p>
     </div>
   </div>
-  
+
   <div class="text-center mt-12">
     <p class="text-xl text-gray-300 mb-2">
-      More projects on 
-      <a href="https://www.linkedin.com/in/fabien-gailledrat/recent-activity/all/" 
-         class="text-3b82f6 hover:text-white transition" 
-         target="_blank" rel="noopener">
+      More projects on
+      <a href="https://www.linkedin.com/in/fabien-gailledrat/recent-activity/all/" class="text-3b82f6 hover:text-white transition" target="_blank" rel="noopener">
          LinkedIn
       </a>
     </p>
   </div>
 </section>
-      <div class="section-divider my-16 max-w-6xl mx-auto"></div>
-
+<div class="section-divider my-16 max-w-6xl mx-auto"></div>
 <!-- LINKEDIN END -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- INSTAGRAM START -->
 <section id="instagram" class="py-16 px-6 max-w-6xl mx-auto">
@@ -561,98 +390,62 @@ body {
     <a href="https://www.instagram.com/ardelliaprod" class="text-3b82f6 hover:text-white transition">@ardelliaprod</a>.
   </p>
 
-  <style>
-    .insta-mask {
-      position: relative;
-      width: 100%;
-      height: 410px;      /* visible window */
-      overflow: hidden;
-      border-radius: 16px;
-    }
-    .insta-mask-inner {
-      position: absolute;
-      top: -60px;        /* shift to hide header/footer */
-      left: 0;
-      width: 100%;
-      transform: scale(1.04);
-      transform-origin: top center;
-    }
-    .insta-mask-inner blockquote,
-    .insta-mask-inner iframe {
-      width: 100% !important;
-      max-width: none !important;
-    }
-  </style>
-
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     <!-- Reel 1 -->
-    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/20 transition-all duration-300">
+    <div class="card">
       <div class="insta-mask shadow-xl">
         <div class="insta-mask-inner">
-          <blockquote class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/reel/DQ3lCZWkXnq/?utm_source=ig_embed&utm_campaign=loading"
-            data-instgrm-version="14"></blockquote>
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQ3lCZWkXnq/?utm_source=ig_embed&utm_campaign=loading" data-instgrm-version="14"></blockquote>
         </div>
       </div>
     </div>
 
     <!-- Reel 2 -->
-    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/20 transition-all duration-300">
+    <div class="card">
       <div class="insta-mask shadow-xl">
         <div class="insta-mask-inner">
-          <blockquote class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/reel/DJGiBAqTaf3/?utm_source=ig_embed&utm_campaign=loading"
-            data-instgrm-version="14"></blockquote>
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DJGiBAqTaf3/?utm_source=ig_embed&utm_campaign=loading" data-instgrm-version="14"></blockquote>
         </div>
       </div>
     </div>
 
     <!-- Reel 3 -->
-    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/20 transition-all duration-300">
+    <div class="card">
       <div class="insta-mask shadow-xl">
         <div class="insta-mask-inner">
-          <blockquote class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/reel/DCgfI95vgH8/?utm_source=ig_embed&utm_campaign=loading"
-            data-instgrm-version="14"></blockquote>
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DCgfI95vgH8/?utm_source=ig_embed&utm_campaign=loading" data-instgrm-version="14"></blockquote>
         </div>
       </div>
     </div>
 
     <!-- Reel 4 -->
-    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/20 transition-all duration-300">
+    <div class="card">
       <div class="insta-mask shadow-xl">
         <div class="insta-mask-inner">
-          <blockquote class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/reel/DB3EFK8SeSa/?utm_source=ig_embed&utm_campaign=loading"
-            data-instgrm-version="14"></blockquote>
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DB3EFK8SeSa/?utm_source=ig_embed&utm_campaign=loading" data-instgrm-version="14"></blockquote>
         </div>
       </div>
     </div>
 
     <!-- Reel 5 -->
-    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/20 transition-all duration-300">
+    <div class="card">
       <div class="insta-mask shadow-xl">
         <div class="insta-mask-inner">
-          <blockquote class="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/reel/DQTOZI4E-7R/?utm_source=ig_embed&utm_campaign=loading"
-            data-instgrm-version="14"></blockquote>
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQTOZI4E-7R/?utm_source=ig_embed&utm_campaign=loading" data-instgrm-version="14"></blockquote>
         </div>
       </div>
     </div>
 
     <!-- Reel 6 -->
-
-
-  <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 hover:bg-white/20 transition-all duration-300">
-<div class="insta-mask shadow-xl">
+    <div class="card">
+      <div class="insta-mask shadow-xl">
         <div class="insta-mask-inner">
-    <blockquote class="instagram-media" 
-      data-instgrm-permalink="https://www.instagram.com/reel/C_ZT_OryVNJ/?utm_source=ig_embed&utm_campaign=loading" 
-      data-instgrm-version="14">
-    </blockquote>
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C_ZT_OryVNJ/?utm_source=ig_embed&utm_campaign=loading" data-instgrm-version="14"></blockquote>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-  <!-- Instagram script once -->
+
   <script async src="https://www.instagram.com/embed.js"></script>
 
   <div class="text-center mt-10">
@@ -662,114 +455,83 @@ body {
     </p>
   </div>
 </section>
-        <div class="section-divider my-16 max-w-6xl mx-auto"></div>
-
+<div class="section-divider my-16 max-w-6xl mx-auto"></div>
 <!-- INSTAGRAM END -->
 
+<!-- VALUES START -->
+<section id="values" class="py-16 px-6 max-w-6xl mx-auto">
+    <h2 class="text-4xl md:text-5xl mb-12 text-center tracking-wide">MY PRODUCTION APPROACH</h2>
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- ### VALUES START ### -->
-
-<section id="values" class="py-16 px-16 max-w-6xl mx-auto">
-    <h2 class="text-4xl md:text-5xl mb-12 text-center tracking-wide">
-        MY PRODUCTION APPROACH
-    </h2>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white p-8 rounded-xl shadow-md testimonial-card">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card p-6">
             <div class="text-blue-500 mb-4">
                 <i class="fas fa-dollar-sign text-3xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-3 text-[#0a0f2e]">Budget Efficiency</h3>
-            <p class="text-gray-600 mb-4">Maximum production value within your budget constraints. Even in one day, we can creat a very good-looking video</p>
-            
+            <h3 class="text-xl font-bold mb-3 text-white">Budget Efficiency</h3>
+            <p class="text-gray-300 mb-4">Maximum production value within your budget constraints. Even in one day, we can create a very good-looking video</p>
         </div>
-        
-        <div class="bg-white p-8 rounded-xl shadow-md testimonial-card">
+
+        <div class="card p-6">
             <div class="text-purple-500 mb-4">
                 <i class="fas fa-lightbulb text-3xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-3 tracking-tight text-[#0a0f2e]">Latest Techniques and Trends</h3>
-            <p class="text-gray-600 mb-4">The tools we have at our disposal have always been evolving. <br>
-              Do I consider working with AI? 
-              I already do! I Try to always stay ahead of the curve.</p>
-           
+            <h3 class="text-xl font-bold mb-3 tracking-tight text-white">Latest Techniques and Trends</h3>
+            <p class="text-gray-300 mb-4">The tools we have at our disposal have always been evolving.<br>Do I consider working with AI? I already do! I try to always stay ahead of the curve.</p>
         </div>
-        
-        <div class="bg-white p-8 rounded-xl shadow-md testimonial-card">
+
+        <div class="card p-6">
             <div class="text-green-500 mb-4">
                 <i class="fas fa-chart-line text-3xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-3 text-[#0a0f2e]">Performance-Driven</h3>
-            <p class="text-gray-600 mb-4">Our single goal: unleash a storm of likes.</p>
+            <h3 class="text-xl font-bold mb-3 text-white">Performance-Driven</h3>
+            <p class="text-gray-300 mb-4">Our single goal: unleash a storm of likes.</p>
         </div>
-        
-        <div class="bg-white p-8 rounded-xl shadow-md testimonial-card">
+
+        <div class="card p-6">
             <div class="text-yellow-500 mb-4">
                 <i class="fas fa-laugh-beam text-3xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-3 text-[#0a0f2e]">Passion Project</h3>
-            <p class="text-gray-600 mb-4">Video production is my craft and calling. Every project I take on gets all of my focus, energy, and heart.</p>
+            <h3 class="text-xl font-bold mb-3 text-white">Passion Project</h3>
+            <p class="text-gray-300 mb-4">Video production is my craft and calling. Every project I take on gets all of my focus, energy, and heart.</p>
         </div>
     </div>
 </section>
+<div class="section-divider my-16 max-w-6xl mx-auto"></div>
+<!-- VALUES END -->
 
-<!-- ### VALUES END ### -->
+<!-- CONTACT START -->
+<section id="contact" class="py-16 px-6 max-w-6xl mx-auto">
+    <div class="bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-2xl p-8 md:p-12 text-white">
+        <h2 class="text-4xl md:text-5xl mb-6 tracking-wide">READY TO CREATE?</h2>
+        <p class="text-lg mb-8 max-w-2xl">
+            Professional video production with global reach. Paris-based team. Bangkok operations. Remote editing worldwide. Fast turnaround, premium results.
+        </p>
 
-
-
-
-
-
-
-
-
-
-
-    <!-- ### CONTACT START ### -->
-    <section id="contact" class="py-16 px-6 max-w-6xl mx-auto">
-        <div class="bg-gradient-to-r from-[#3b82f6] to-[#2563eb] rounded-2xl p-8 md:p-12 text-white">
-            <h2 class="text-4xl md:text-5xl mb-6 tracking-wide">READY TO CREATE?</h2>
-            <p class="text-lg mb-8 max-w-2xl">
-                Professional video production with global reach. Paris-based team. Bangkok operations. 
-                Remote editing worldwide. Fast turnaround, premium results.
-            </p>
-            
-            <div class="flex flex-wrap gap-4 mb-8">
-                <a href="https://www.linkedin.com/in/fabien-gailledrat/" class="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full flex items-center social-icon hover:bg-white/20">
-                    <i class="fab fa-linkedin-in mr-2"></i> LinkedIn
-                </a>
-                <a href="https://www.instagram.com/ardelliaprod/reels/" class="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full flex items-center social-icon hover:bg-white/20">
-                    <i class="fab fa-instagram mr-2"></i> Instagram
-                </a>
-                <a href="mailto:ardelliaprod@gmail.com" class="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full flex items-center social-icon hover:bg-white/20">
-                    <i class="fas fa-envelope mr-2"></i> Email
-                </a>
-            </div>
-            
-            <div class="pt-6 mt-6 border-t border-white/20">
-                <p class="text-xl font-bold mt-2">Fabien Gailledrat</p>
-                <p class="text-sm opacity-90 mt-2">Ardellia Prod</p>
-            </div>
+        <div class="flex flex-wrap gap-4 mb-8">
+            <a href="https://www.linkedin.com/in/fabien-gailledrat/" class="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full flex items-center hover:bg-white/20 transition">
+                <i class="fab fa-linkedin-in mr-2"></i> LinkedIn
+            </a>
+            <a href="https://www.instagram.com/ardelliaprod/reels/" class="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full flex items-center hover:bg-white/20 transition">
+                <i class="fab fa-instagram mr-2"></i> Instagram
+            </a>
+            <a href="mailto:ardelliaprod@gmail.com" class="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full flex items-center hover:bg-white/20 transition">
+                <i class="fas fa-envelope mr-2"></i> Email
+            </a>
         </div>
-    </section>
-    <!-- ### CONTACT END ### -->
 
-    <footer class="py-8 px-6 bg-[#0a0f2e] text-[#F2F2F2]">
-        <div class="max-w-6xl mx-auto text-center">
-            <p class="text-gray-500">© 2025 Ardellia Prod. All rights reserved.</p>
+        <div class="pt-6 mt-6 border-t border-white/20">
+            <p class="text-xl font-bold mt-2">Fabien Gailledrat</p>
+            <p class="text-sm opacity-90 mt-2">Ardellia Prod</p>
         </div>
-    </footer>
+    </div>
+</section>
+<!-- CONTACT END -->
+
+<footer class="py-8 px-6 bg-[#0a0f2e] text-[#F2F2F2]">
+    <div class="max-w-6xl mx-auto text-center">
+        <p class="text-gray-500">© 2025 Ardellia Prod. All rights reserved.</p>
+    </div>
+</footer>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -866,10 +628,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-</script>
 
-
-<script>
 document.addEventListener('DOMContentLoaded', function () {
   const toggle = document.getElementById('mobile-toggle');
   const menu   = document.getElementById('mobile-menu');
@@ -886,9 +645,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 </script>
-
-
-
 
 </body>
 </html>
